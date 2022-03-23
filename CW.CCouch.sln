@@ -23,6 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CW.CCouch.XUnit.Integration
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CW.CCouch.XUnit.FunctionalTests", "tests\CW.CCouch.XUnit.FunctionalTests\CW.CCouch.XUnit.FunctionalTests.csproj", "{57CB4F6B-C05F-4F0B-988A-73A76C1F7590}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{90018428-EEED-4D7F-819A-A1B5A70B6E5B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
