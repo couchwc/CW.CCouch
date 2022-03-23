@@ -1,4 +1,5 @@
-﻿using CW.CCouch.SharedKernel.Integers;
+﻿using CW.CCouch.SharedKernel.Colors;
+using CW.CCouch.SharedKernel.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,6 @@ namespace CW.CCouch.SharedKernel.Conversions
     /// </summary>
     public static class Hexidecimal
     {
-
-        // Constants
-        const int MaximumIntegerValue =
-            255;
-
-        const int MinimumIntegerValue =
-            0;
 
         /// <summary>
         /// Formats the given RGB value into hexidecimal form using the .NET
@@ -41,8 +35,8 @@ namespace CW.CCouch.SharedKernel.Conversions
 
             var newValue =
                 value.Clamp(
-                    maximum: MaximumIntegerValue,
-                    minimum: MinimumIntegerValue);
+                    maximum: RGB.MaximumValue,
+                    minimum: RGB.MinimumValue);
 
             var hexValue =
                 newValue.ToString("X2");

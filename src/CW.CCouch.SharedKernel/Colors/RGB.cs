@@ -14,6 +14,13 @@ namespace CW.CCouch.SharedKernel.Colors
     public class RGB
     {
 
+        // Constants
+        public const int MaximumValue =
+            255;
+
+        public const int MinimumValue =
+            0;
+
         /// <summary>
         /// 
         /// </summary>
