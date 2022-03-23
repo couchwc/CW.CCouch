@@ -34,8 +34,9 @@ namespace CW.CCouch.SharedKernel.Colors
         /// 
         /// Valid decimal values for RGB are 0 - 255. Any values that fall out 
         /// of that range must be rounded to the closest valid value.
+        /// 
+        /// Other solutions: https://www.codewars.com/kata/513e08acc600c94f01000001/solutions/csharp
         /// </remarks>
-        /// <exception cref="NotImplementedException"></exception>
         public static string ToHexidecimal(
             int r,
             int g,
