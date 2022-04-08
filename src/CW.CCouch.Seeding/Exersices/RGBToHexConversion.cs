@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace CW.CCouch.Seeding.Exersices
 {
 
-/// <summary>
-/// 
-/// </summary>
-    internal class RGBToHexConversion
+    /// <summary>
+    /// 
+    /// </summary>
+    internal static class RGBToHexConversion
     {
 
         /// <summary>
         /// 
         /// </summary>
-        public void Exercise()
+        public static string Exercise()
         {
-            
+
             const string WhiteHexColor =
                 "FFFFFF";
 
@@ -31,6 +31,22 @@ namespace CW.CCouch.Seeding.Exersices
             var areEqual = string.Equals(
                 a: WhiteHexColor,
                 b: value);
+
+            var outputBuilder =
+                new StringBuilder();
+
+            outputBuilder.AppendLine($"--------------------------------------------------");
+            outputBuilder.Append($"{DateTime.Now.ToString(CW.CCouch.SharedKernel.Formatting.Constants.FullDateTimeFormat)} ");
+            outputBuilder.AppendLine($"{nameof(RGBToHexConversion)}");
+            outputBuilder.AppendLine();
+            outputBuilder.AppendLine($"Output:");
+            outputBuilder.AppendLine($"{WhiteHexColor} is equal to {value} = {areEqual}");
+            outputBuilder.Append($"--------------------------------------------------");
+
+            var output =
+                outputBuilder.ToString();
+
+            return output;
 
         }
 
